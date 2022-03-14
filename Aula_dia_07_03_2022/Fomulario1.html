@@ -9,10 +9,33 @@
 </head>
 
 <body>
-   <form action="#" method="get">
-      <p>Nome: <input type="text"></p>
-      <p>Idade: <input type="text"></p>
-      <p>Senha: <input type="password"></p>
+   <form action="#" method="post">
+      <p>Nome: <input type="text" name="nome" placeholder="Nome" required></p>
+      <p>Idade: <input type="text" name="idade"></p>
+      <p>Senha: <input type="password" name="Senha"></p>
+      <p>
+         Interesses:
+         <input type="checkbox" name="futebol" id=""> Futebol
+         <input type="checkbox" name="novela" id=""> Novela
+         <input type="checkbox" name="bbb" id=""> BBB
+         <input type="checkbox" name="internet" id=""> Internet
+      </p>
+      <p>
+         Status:
+         <input type="radio" name="status" value="ativo" id=""> Ativo
+         <input type="radio" name="status" value="inativo" id=""> Inativo
+      </p>  
+      <p>Currículo: <input type="file" name="curriculo" id=""></p>
+      <p><input type="hidden" name="token" value="lau"></p>
+      <p>Frase Inspiradora: <textarea name="" id="" cols="50" rows="1">Alguma frase dita por Albert Einstein</textarea></p>
+      <select name="cidade" id="">
+         <option value="">Maringá</option>
+         <option value="">Sarandi</option>
+         <option value="">Marialva</option>
+      </select>
+      <p>Email: <input type="email" name="email" id="" required></p>
+      <p><input type="button" value="Enviar"></p>
+      <p><input type="submit" value="Enviar"></p>
    </form>
 
 </body>
